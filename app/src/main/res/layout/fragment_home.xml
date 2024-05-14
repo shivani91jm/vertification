@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           android:background="@color/purple_700"
+
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:id="@+id/liner_logout_home"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp"
+                   android:text="@string/app_name"
+                   android:layout_gravity="left"
+                   android:layout_weight="1"
+                   android:paddingTop="6dp"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/white"
+                   />
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_gravity="right"
+                   android:layout_weight="1"
+                   android:layout_marginLeft="90dp"
+                   android:src="@drawable/logout_24"
+                   />
+
+
+           </LinearLayout>
+       </androidx.appcompat.widget.Toolbar>
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_below="@+id/toolbar"
+           android:layout_height="match_parent">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:id="@+id/card_profile"
+
+
+                   android:layout_height="240dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/card_round_list"
+                        android:padding="10dp"
+                        android:layout_height="240dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chnagepass"
+                            android:padding="5dp"
+                            android:textSize="16sp"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:textStyle="bold"
+                            android:id="@+id/tv_change_pass"
+                            android:textColor="@color/colorAccent"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                     android:text="@string/name"
+                                      android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+
+                                    android:textColor="@color/purple_700"
+                                    />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/colum"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                android:textColor="@color/purple_700"
+                                />
+                               <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                     android:text="xxxx"
+                                     android:textSize="16sp"
+                                      android:id="@+id/tv_name"
+                                     android:textStyle="bold"
+                                      android:padding="5dp"
+                                    />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/email"
+                                android:padding="5dp"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/colum"
+
+
+
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="xxxx"
+                                android:id="@+id/tv_email"
+                                android:layout_weight="1"
+
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mobile"
+                                android:padding="5dp"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/colum"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                android:textColor="@color/purple_700"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="xxxx"
+                                android:id="@+id/tv_mobile"
+                                android:layout_weight="1"
+
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/adhar"
+                                android:padding="5dp"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/colum"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                android:textColor="@color/purple_700"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="xxxx"
+                                android:id="@+id/tv_adhar"
+                                android:layout_weight="1"
+
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pan"
+                                android:padding="5dp"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/colum"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+
+                                android:textColor="@color/purple_700"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="xxxx"
+                                android:id="@+id/tv_pan"
+                                android:layout_weight="1"
+
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_below="@+id/card_profile"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/card_round_list"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:weightSum="3"
+                       android:orientation="vertical">
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                             android:gravity="center"
+                             android:weightSum="3"
+                             android:orientation="horizontal">
+                             <LinearLayout
+                                 android:layout_width="120dp"
+                                 android:layout_height="120dp"
+
+                                 android:gravity="center"
+                                 android:layout_weight="1"
+                                 android:orientation="horizontal">
+                                 <LinearLayout
+                                     android:layout_width="120dp"
+                                     android:layout_height="120dp"
+                                     android:gravity="center"
+
+                                     android:background="@drawable/card_round_list"
+                                     android:orientation="vertical">
+                                     <TextView
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:text="@string/total_job"
+                                         android:textAlignment="center"
+                                         android:layout_gravity="center_horizontal"
+                                         android:gravity="center"
+                                         android:paddingTop="20dp"
+                                         android:textSize="18sp"
+                                         android:textColor="@color/purple_700"
+                                         />
+                                     <TextView
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:text="0"
+                                         android:id="@+id/tv_totaljob"
+                                         android:textAlignment="center"
+                                         android:layout_gravity="center_horizontal"
+                                         android:gravity="center"
+
+                                         android:textSize="20sp"
+                                         android:textColor="@color/black"
+                                         />
+                                 </LinearLayout>
+
+                             </LinearLayout>
+                             <LinearLayout
+                           android:layout_width="120dp"
+                           android:layout_height="120dp"
+
+                           android:gravity="center"
+                           android:layout_weight="1"
+
+                              android:orientation="horizontal">
+                           <LinearLayout
+                               android:layout_width="120dp"
+                               android:layout_height="120dp"
+
+                               android:gravity="center"
+
+                               android:background="@drawable/card_round_list"
+                               android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="@string/open"
+                               android:textAlignment="center"
+                               android:layout_gravity="center_horizontal"
+                               android:gravity="center"
+
+                               android:paddingTop="20dp"
+                               android:textSize="18sp"
+                               android:textColor="@color/purple_700"
+                               />
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:text="0"
+                                   android:textAlignment="center"
+                                   android:layout_gravity="center_horizontal"
+                                   android:gravity="center"
+                                   android:id="@+id/tv_open"
+
+                                   android:textSize="20sp"
+                                   android:textColor="@color/black"
+                                   />
+                           </LinearLayout>
+
+                          </LinearLayout>
+                             <LinearLayout
+                                 android:layout_width="120dp"
+                                 android:layout_height="120dp"
+                                 android:gravity="center"
+                                 android:layout_weight="1"
+                                   android:orientation="horizontal">
+                                 <LinearLayout
+                                     android:layout_width="120dp"
+                                     android:layout_height="120dp"
+
+                                     android:gravity="center"
+
+                                     android:background="@drawable/card_round_list"
+                                     android:orientation="vertical">
+                                     <TextView
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:text="@string/close"
+                                         android:textAlignment="center"
+                                         android:layout_gravity="center_horizontal"
+                                         android:gravity="center"
+                                         android:paddingTop="20dp"
+                                         android:textSize="18sp"
+                                         android:textColor="@color/purple_700"
+                                         />
+                                     <TextView
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:text="0"
+                                         android:id="@+id/tv_close"
+                                         android:textAlignment="center"
+                                         android:layout_gravity="center_horizontal"
+                                         android:gravity="center"
+
+                                         android:textSize="20sp"
+                                         android:textColor="@color/black"
+                                         />
+                                 </LinearLayout>
+
+                             </LinearLayout>
+                   </LinearLayout>
+                         <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:weightSum="3"
+                           android:layout_marginTop="15dp"
+                           android:orientation="horizontal">
+                           <LinearLayout
+                               android:layout_width="120dp"
+                               android:layout_height="120dp"
+                               android:gravity="center"
+                               android:layout_weight="1"
+                               android:orientation="horizontal">
+                               <LinearLayout
+                                   android:layout_width="120dp"
+                                   android:layout_height="120dp"
+                                   android:gravity="center"
+                                   android:background="@drawable/card_round_list"
+                                   android:orientation="vertical">
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="@string/timepot"
+                                       android:textAlignment="center"
+                                       android:layout_gravity="center_horizontal"
+                                       android:gravity="center"
+                                       android:paddingTop="20dp"
+                                       android:textSize="18sp"
+                                       android:textColor="@color/purple_700"
+                                       />
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="0"
+                                       android:id="@+id/tv_timeout"
+                                       android:textAlignment="center"
+                                       android:layout_gravity="center_horizontal"
+                                       android:gravity="center"
+
+                                       android:textSize="20sp"
+                                       android:textColor="@color/black"
+                                       />
+                               </LinearLayout>
+
+                           </LinearLayout>
+                           <LinearLayout
+                               android:layout_width="120dp"
+                               android:layout_height="120dp"
+                               android:gravity="center"
+                               android:layout_weight="1"
+
+                               android:orientation="horizontal">
+                               <LinearLayout
+                                   android:layout_width="120dp"
+                                   android:layout_height="120dp"
+
+                                   android:gravity="center"
+
+                                   android:background="@drawable/card_round_list"
+                                   android:orientation="vertical">
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="@string/notassign"
+                                       android:textAlignment="center"
+                                       android:layout_gravity="center_horizontal"
+                                       android:gravity="center"
+                                       android:paddingTop="20dp"
+                                       android:textSize="18sp"
+                                       android:textColor="@color/purple_700"
+                                       />
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="0"
+                                       android:textAlignment="center"
+                                       android:layout_gravity="center_horizontal"
+                                       android:gravity="center"
+                                       android:id="@+id/tv_notassign"
+
+                                       android:textSize="20sp"
+                                       android:textColor="@color/black"
+                                       />
+                               </LinearLayout>
+
+                           </LinearLayout>
+                           <LinearLayout
+                               android:layout_width="120dp"
+                               android:layout_height="120dp"
+                               android:gravity="center"
+                               android:layout_weight="1"
+                               android:orientation="horizontal">
+                               <LinearLayout
+                                   android:layout_width="120dp"
+                                   android:layout_height="120dp"
+
+                                   android:gravity="center"
+
+                                   android:background="@drawable/card_round_list"
+                                   android:orientation="vertical">
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="@string/requestjob"
+                                       android:textAlignment="center"
+                                       android:layout_gravity="center_horizontal"
+                                       android:gravity="center"
+                                       android:paddingTop="20dp"
+                                       android:textSize="18sp"
+                                       android:textColor="@color/purple_700"
+                                       />
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="0"
+                                       android:textAlignment="center"
+                                       android:layout_gravity="center_horizontal"
+                                       android:gravity="center"
+                                       android:id="@+id/tv_requestedjob"
+
+                                       android:textSize="20sp"
+                                       android:textColor="@color/black"
+                                       />
+                               </LinearLayout>
+
+                           </LinearLayout>
+                       </LinearLayout>
+
+
+
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+
+           </RelativeLayout>
+       </androidx.core.widget.NestedScrollView>
+   </RelativeLayout>
+
+</FrameLayout>

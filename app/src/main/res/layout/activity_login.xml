@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:foregroundGravity="clip_vertical|center_horizontal"
+        app:cardCornerRadius="15dp">
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              app:hintTextColor="@color/purple_700"
+              android:gravity="center">
+              <ImageView
+                  android:layout_width="250dp"
+                  android:layout_height="250dp"
+                  android:src="@drawable/logo"
+                  android:layout_marginTop="70dp"
+                  />
+              <com.google.android.material.textfield.TextInputLayout
+                  style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="12dp"
+                  android:hint="Email"
+                  android:layout_marginTop="10dp"
+                  app:hintTextColor="@color/purple_700"
+                  app:boxCornerRadiusBottomStart="5dp"
+                  app:boxCornerRadiusTopStart="5dp"
+                  app:boxCornerRadiusBottomEnd="5dp"
+                  app:boxCornerRadiusTopEnd="5dp"
+                  app:boxStrokeColor="@color/purple_700">
+
+                  <com.google.android.material.textfield.TextInputEditText
+                      android:id="@+id/email"
+                      android:inputType="textEmailAddress"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />
+
+              </com.google.android.material.textfield.TextInputLayout>
+              <com.google.android.material.textfield.TextInputLayout
+                  style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="12dp"
+                  android:hint="Password"
+                  app:boxCornerRadiusBottomStart="5dp"
+                  app:boxCornerRadiusTopStart="5dp"
+                  app:boxCornerRadiusBottomEnd="5dp"
+                  app:boxCornerRadiusTopEnd="5dp"
+                  app:endIconMode="password_toggle"
+                  app:endIconTint="@color/purple_700"
+                  app:boxStrokeColor="@color/purple_700">
+
+                  <com.google.android.material.textfield.TextInputEditText
+                      android:id="@+id/et_password"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="textPassword"/>
+
+              </com.google.android.material.textfield.TextInputLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="textEnd"
+                  android:id="@+id/liner_forget"
+                  >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/forget"
+                      android:layout_gravity="right"
+                      android:gravity="right"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginRight="10dp"
+                      android:textColor="@color/purple_700"
+                      />
+              </LinearLayout>
+
+
+
+              <Button
+                  android:id="@+id/login_btn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/login"
+                    android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginTop="40dp"
+                  android:background="@drawable/rounded_button" />
+
+          </LinearLayout>
+      </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
